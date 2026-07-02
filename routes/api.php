@@ -9,3 +9,6 @@ Route::get('/delivery/status/{trackingNumber}', [DeliveryController::class, 'get
 
 // Routes pour le panneau Admin (gestionnaire)
 Route::post('/admin/delivery/estimate', [AdminDeliveryController::class, 'estimate']);
+
+// Route pour le suivi de colis
+Route::get('/tracking/colis/{code}', [DeliveryController::class, 'track']);
